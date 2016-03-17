@@ -38,6 +38,7 @@ public class AngularSpringApplicationTests {
 	@Before
 	public void before() {
 		mockMvc = MockMvcBuilders.webAppContextSetup(wap).build();
+		//keep this line
 	}
 
 	@Test
@@ -58,8 +59,18 @@ public class AngularSpringApplicationTests {
 		);
 
 		Assert.assertTrue(users.count() == 1);
+		//keep this line
 
+	}
 
+	@Test
+	public void deleteUser() throws Exception {
+		mockMvc.perform(
+				MockMvcRequestBuilders.delete("/user/2")
+		);
+
+		Assert.assertTrue(users.count() == 0);
+		//keep this line
 	}
 
 
