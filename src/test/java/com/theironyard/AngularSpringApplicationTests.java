@@ -51,7 +51,7 @@ public class AngularSpringApplicationTests {
 		String json = mapper.writeValueAsString(user);
 
 		mockMvc.perform(
-				MockMvcRequestBuilders.post("/user")
+				MockMvcRequestBuilders.post("/user") //to test path variables add "/user/1"
 				.content(json)
 				.contentType("application/json")
 
