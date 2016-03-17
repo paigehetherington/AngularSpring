@@ -2,7 +2,7 @@ package com.theironyard;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.theironyard.enitities.User;
+import com.theironyard.entities.User;
 import com.theironyard.services.UserRepository;
 import org.junit.Assert;
 import org.junit.Before;
@@ -66,7 +66,7 @@ public class AngularSpringApplicationTests {
 	@Test
 	public void deleteUser() throws Exception {
 		mockMvc.perform(
-				MockMvcRequestBuilders.delete("/user/2")
+				MockMvcRequestBuilders.delete("/user/1")
 		);
 
 		Assert.assertTrue(users.count() == 0);

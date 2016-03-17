@@ -1,6 +1,6 @@
 package com.theironyard.services;
 
-import com.theironyard.enitities.User;
+import com.theironyard.entities.User;
 import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.data.repository.CrudRepository;
 

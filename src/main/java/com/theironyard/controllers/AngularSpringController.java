@@ -1,6 +1,6 @@
 package com.theironyard.controllers;
 
-import com.theironyard.enitities.User;
+import com.theironyard.entities.User;
 import com.theironyard.services.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
